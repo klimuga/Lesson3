@@ -1,0 +1,15 @@
+input_string1 = input('Введите числа, разделенные запятой: ')
+digit_list1 = input_string1.split(',')
+print('1-ый спсок чисел: ', digit_list1)
+digit_list1_list = list()
+for i in range(len(digit_list1)):
+    digit_list1_list.append(int(digit_list1[i]))
+print('')
+input_string2 = input('Введите числа, разделенные запятой: ')
+digit_list2 = input_string2.split(',')
+print('2-ой спсок чисел: ', digit_list2)
+digit_list2_list = list()
+for i in range(len(digit_list2)):
+    digit_list2_list.append(int(digit_list2[i]))
+print('')
+print('Разница между списками: ', set(digit_list1_list)-set(digit_list2_list))
